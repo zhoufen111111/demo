@@ -1,18 +1,18 @@
 pipeline:
   backend:
     group: build
-      image: golang
-      commands:
-        - go build
-        - go test
-        - sleep 30
+    image: golang
+    commands:
+      - go build
+      - go test
+      - sleep 30
   frontend:
     group: build
-      image: alpine
-      commands:
-      - echo holai_aasd
-      - echo mundo
-      - sleep 20
+    image: alpine
+    commands:
+    - echo holai_aasd
+    - echo mundo
+    - sleep 20
   fr:
     image: alpine
     commands:
