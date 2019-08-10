@@ -10,7 +10,7 @@ pipeline:
     group: build
       image: alpine
       commands:
-      - echo hola
+      - echo holai_aasd
       - echo mundo
       - sleep 20
   fr:
