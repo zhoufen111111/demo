@@ -11,6 +11,8 @@ pipeline:
     commands:
     - echo hola
     - echo mundo
-  publish:
-    image: plugins/docker
-    repo: octocat/hello-world
+  fr:
+    image: alpine
+    commands:
+    - echo bonjour
+    - echo monde
