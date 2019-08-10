@@ -7,11 +7,10 @@ pipeline:
       - go test
   frontend:
     group: build
-    image: node
+    image: alpine
     commands:
-      - npm install
-      - npm run test
-      - npm run build
+    - echo hola
+    - echo mundo
   publish:
     image: plugins/docker
     repo: octocat/hello-world
