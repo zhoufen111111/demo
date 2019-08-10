@@ -5,12 +5,14 @@ pipeline:
     commands:
       - go build
       - go test
+      - sleep 30
   frontend:
     group: build
     image: alpine
     commands:
     - echo hola
     - echo mundo
+    - sleep 20
   fr:
     image: alpine
     commands:
