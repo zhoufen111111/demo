@@ -1,13 +1,13 @@
 pipeline:
   backend:
-    group: build
+   group: build
     image: golang
     commands:
       - go build
       - go test
       - sleep 30
   frontend:
-    group: build
+   group: build
     image: alpine
     commands:
     - echo holai_aasd
